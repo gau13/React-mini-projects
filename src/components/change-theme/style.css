@@ -1,0 +1,39 @@
+.light {
+  height: 100dvh;
+  background-color: white;
+  transition: 0.5s;
+}
+.dark {
+  height: 100dvh;
+
+  background-color: black;
+  transition: 0.5s;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.p-light {
+  font-size: 20px;
+}
+.p-dark {
+  font-size: 20px;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 100px;
+  cursor: pointer;
+}
+.button-light {
+  background-color: black;
+  color: white;
+}
+.button-dark {
+}

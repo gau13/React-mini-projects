@@ -1,0 +1,10 @@
+.star-rating {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  font-size: 70px;
+}
+.active {
+  color: yellow;
+}
