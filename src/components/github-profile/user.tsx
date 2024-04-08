@@ -1,7 +1,7 @@
 import React from "react";
 
 const User = ({ userdata }) => {
-  const { avatar_url, name, login, followers, following, html_url } = userdata;
+  const { avatar_url, name, login, followers, following } = userdata;
   return (
     <div className="user-wrapper">
       <img className="user-img" src={avatar_url} />

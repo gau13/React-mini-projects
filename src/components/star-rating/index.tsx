@@ -6,15 +6,15 @@ const StarRating = ({ noofstars = 10 }) => {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
 
-  const handleClick = (index) => {
+  const handleClick = (index: number) => {
     console.log("click", index);
     setRating(index);
   };
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index: number) => {
     console.log("enter", index);
     setHover(index);
   };
-  const handleMouseLeave = (index) => {
+  const handleMouseLeave = (index: number) => {
     console.log("leave", index);
     setHover(rating);
   };

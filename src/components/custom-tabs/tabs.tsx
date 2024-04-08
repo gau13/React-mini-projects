@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import "./tabs.css";
 
-const Tabs = ({ tabcontent }) => {
+type TabProps = {
+  tabcontent: {
+    label: string;
+    content: React.JSX.Element;
+  }[];
+};
+const Tabs: React.FC<TabProps> = ({ tabcontent }) => {
   const [currIndex, setCurrIndex] = useState(0);
   const [show, setShow] = useState(false);
   const [active, setActive] = useState(false);
 
-  const handleClick = (getIndex) => {
+  const handleClick = (getIndex: number) => {
     setCurrIndex(getIndex);
     setShow(true);
     setActive(true);

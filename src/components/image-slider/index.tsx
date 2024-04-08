@@ -2,9 +2,13 @@ import React, { useEffect, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import "./style.css";
 
+type Pics = {
+  id: number;
+  download_url: string;
+};
 const ImageSlider = ({ url, limit }) => {
   const [current, setCurrent] = useState(0);
-  const [pics, setPics] = useState([]);
+  const [pics, setPics] = useState<Pics[]>([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 

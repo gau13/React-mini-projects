@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
 
+type Data = {
+  id: number;
+  firstName: string;
+};
+
 const Autocomplete = () => {
   const [name, setName] = useState("");
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Data[]>([]);
 
   const fetchUsers = async () => {
     const res = await fetch(`https://dummyjson.com/user/search?q=${name}`);
@@ -13,7 +18,7 @@ const Autocomplete = () => {
     }
   };
 
-  const handleName = (name) => {
+  const handleName = (name: string) => {
     setName(name);
 
     setData([]);

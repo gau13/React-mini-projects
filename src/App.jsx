@@ -8,6 +8,8 @@ import TabTest from "./components/custom-tabs/tab-test";
 import ModalPage from "./components/custom-modal/ModalPage";
 import Github from "./components/github-profile";
 import Autocomplete from "./components/autocomplete";
+import Pagination from "./components/pagination";
+import Test from "./components/pagination/test";
 
 const App = () => {
   return (
@@ -15,12 +17,14 @@ const App = () => {
       {/* <StarRating /> */}
       {/* <ImageSlider url={"https://picsum.photos/v2/list"} limit={"10"} /> */}
       {/* <LoadMore /> */}
-      {/* <LightDark /> */}
+      {/* No typescript conversion for LightDark component(Confusing)
+      <LightDark /> */}
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
       {/* <TabTest /> */}
       {/* <ModalPage /> */}
       {/* <Github /> */}
-      <Autocomplete />
+      {/* <Autocomplete /> */}
+      <Test />
     </div>
   );
 };

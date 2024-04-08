@@ -25,8 +25,12 @@
 // export default LoadMore;
 import React, { useEffect, useState } from "react";
 
+type Product = {
+  thumbnail: string;
+  price: number;
+};
 const LoadMore = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<Product[]>([]);
   const [error, setError] = useState(null);
   const [count, setCount] = useState(0);
   const [disable, setDisable] = useState(false);

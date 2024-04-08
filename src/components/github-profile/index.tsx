@@ -9,9 +9,6 @@ const Github = () => {
   const handleSubmit = () => {
     fetchDetails();
   };
-  // useEffect(() => {
-  //   fetchDetails();
-  // }, [initialized]);
 
   const fetchDetails = async () => {
     const data = await fetch(`https://api.github.com/users/${user}`);

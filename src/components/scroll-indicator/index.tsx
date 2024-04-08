@@ -2,10 +2,17 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import "./style.css";
 
-const ScrollIndicator = ({ url }) => {
-  const [products, setProducts] = useState([]);
+type Product = {
+  title: string;
+};
+
+type ScrollIndicatorProps = {
+  url: string;
+};
+const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({ url }) => {
+  const [products, setProducts] = useState<Product[]>([]);
   const [scrollPercent, setScrollPercent] = useState(0);
-  const fetchProducts = async (url) => {
+  const fetchProducts = async (url: string) => {
     try {
       const response = await fetch(url);
       const data = await response.json();
