@@ -46,7 +46,7 @@ const Pagination: React.FC<PaginationProps> = ({
   return (
     <div>
       <button disabled={rightDisable ? true : false} onClick={handlePrev}>
-        Prev
+        Previous
       </button>
       {generatePages().map((item, index) => (
         <button
