@@ -3,10 +3,10 @@
   justify-content: center;
   flex-direction: column;
 }
-button {
+/* button {
   flex-wrap: nowrap;
   width: 200px;
-}
+} */
 .modal {
   position: fixed;
   top: -10;

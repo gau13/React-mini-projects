@@ -10,6 +10,12 @@ import Github from "./components/github-profile";
 import Autocomplete from "./components/autocomplete";
 import Pagination from "./components/pagination";
 import Test from "./components/pagination/test";
+import Home from "./components/sample";
+import Stopwatch from "./components/stopwatch";
+import Tooltip from "./components/tooltip";
+import TodoList from "./components/todo/Todo";
+import FilterCards from "./components/filter-products";
+import MusicPlayer from "./components/music-player";
 
 const App = () => {
   return (
@@ -24,7 +30,13 @@ const App = () => {
       {/* <ModalPage /> */}
       {/* <Github /> */}
       {/* <Autocomplete /> */}
-      <Test />
+      {/* <Test /> */}
+      {/* <Home /> */}
+      {/* <Stopwatch /> */}
+      {/* <Tooltip /> */}
+      {/* <TodoList /> */}
+      {/* <FilterCards /> */}
+      <MusicPlayer />
     </div>
   );
 };

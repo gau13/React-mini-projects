@@ -1,0 +1,17 @@
+.tooltip {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-btn {
+}
+
+.test-content {
+  background-color: black;
+  color: white;
+  margin: 10px;
+  padding: 13px;
+  border-radius: 5px;
+}

@@ -5,7 +5,6 @@ import Pagination from ".";
 
 interface Product {
   title: string;
-  // Add other properties here as needed
 }
 const Test = () => {
   const [products, setProducts] = useState<Product[]>([]);

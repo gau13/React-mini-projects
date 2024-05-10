@@ -9,7 +9,12 @@ const ModalPage = () => {
   };
   return (
     <div className="modal-page">
-      <button onClick={handleModal}>Open Modal Popup</button>
+      <button
+        style={{ width: "200px", flexWrap: "nowrap" }}
+        onClick={handleModal}
+      >
+        Open Modal Popup
+      </button>
 
       {showModal && (
         <div>
