@@ -16,6 +16,29 @@ import Tooltip from "./components/tooltip";
 import TodoList from "./components/todo/Todo";
 import FilterCards from "./components/filter-products";
 import MusicPlayer from "./components/music-player";
+import Quiz from "./components/quiz-app";
+import Trelo from "./components/trelo";
+import Timer from "./components/swatch/Timer";
+// import Sample from "./components/1xl/Sample";
+import Swatch from "./components/stopwatch/Swatch";
+// import Index from "./components/Practice";
+// import Tictactoe from "./components/Practice/Tictactoe";
+import Index from "./components/1xl";
+import Accordian from "./components/accordian/Accordian";
+import AccordianTest from "./components/accordian";
+import Circle from "./components/1xl/Circle";
+import AutoC from "./components/autocomplete/AutoC";
+import ChangeTab from "./components/custom-tabs/ChangeTab";
+import Filter from "./components/filter-products/Filter";
+import Debounce from "./components/swatch/Debounce";
+import Hoc from "./components/HOC";
+import Sample from "./components/1xl/Sample";
+import Star from "./components/star-rating/Star";
+import TodoItem from "./components/todo/TodoItem";
+import Expense from "./components/expense-tracker/Expense";
+import PaginationCopy from "./components/pagination/PaginationCopy";
+import DebounceThrottling from "./components/debounce-throttling";
+import Debthro from "./components/1xl/debthro";
 
 const App = () => {
   return (
@@ -36,7 +59,25 @@ const App = () => {
       {/* <Tooltip /> */}
       {/* <TodoList /> */}
       {/* <FilterCards /> */}
-      <MusicPlayer />
+      {/* <MusicPlayer /> */}
+      {/* <Quiz /> */}
+      {/* <Trelo /> */}
+      {/* <Timer /> */}
+      {/* <Sample /> */}
+      {/* <Index /> */}
+      {/* <Tictactoe /> */}
+      {/* <AccordianTest /> */}
+      {/* <Circle /> */}
+      {/* <AutoC /> */}
+      {/* <Filter /> */}
+      {/* <Hoc /> */}
+      {/* <Star /> */}
+      {/* <TodoItem /> */}
+      {/* <Expense /> */}
+      {/* <Page /> */}
+      {/* <PaginationCopy /> */}
+      {/* <DebounceThrottling /> */}
+      <Debthro />
     </div>
   );
 };

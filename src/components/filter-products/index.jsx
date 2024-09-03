@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./filter.css";
 
+// type Data = {
+//   category: string;
+//   id: number;
+//   title: string;
+// };
+
 const FilterCards = () => {
   const [data, setData] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -68,64 +74,3 @@ const FilterCards = () => {
 };
 
 export default FilterCards;
-// import React, { useEffect, useState } from "react";
-// import "./filter.css";
-
-// const FilterCards = () => {
-//   const [products, setProducts] = useState([]);
-//   const [filteredProducts, setFilteredProducts] = useState([]);
-//   const [categories, setCategories] = useState([]);
-
-//   useEffect(() => {
-//     const fetchProducts = async () => {
-//       try {
-//         const response = await fetch("https://dummyjson.com/products");
-//         const data = await response.json();
-//         if (data && data.products) {
-//           setProducts(data.products);
-//           const uniqueCategories = [
-//             "all",
-//             ...new Set(data.products.map((product) => product.category)),
-//           ];
-//           setCategories(uniqueCategories);
-//           setFilteredProducts(data.products);
-//         }
-//       } catch (error) {
-//         console.error("Error fetching products:", error);
-//       }
-//     };
-
-//     fetchProducts();
-//   }, []);
-
-//   const handleFilter = (category) => {
-//     if (category === "all") {
-//       setFilteredProducts(products);
-//     } else {
-//       const filtered = products.filter(
-//         (product) => product.category === category
-//       );
-//       setFilteredProducts(filtered);
-//     }
-//   };
-
-//   return (
-//     <div style={{ margin: "auto" }}>
-//       {categories.map((category) => (
-//         <button onClick={() => handleFilter(category)} key={category}>
-//           {category}
-//         </button>
-//       ))}
-//       <div className="filter-container">
-//         {filteredProducts.map((product) => (
-//           <div className="single" key={product.id}>
-//             <li>{product.title}</li>
-//             <button>{product.category}</button>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default FilterCards;
